@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="tyylit.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Guestbook</title>
 </head>
+
 <body>
+    <div>
+        <h1>Welcome to the guestbook!</h1>
+        <ul>
+            <div>
+                <li><a href="/readguestbook">Read Guestbook</a></li>
+            </div>
+            <div>
+                <li><a href="/newmessage">New Message</a></li>
+            </div>
+            <div>
+                <li><a href="/ajaxmessage">Ajax Message</a></li>
+            </div>
+        </ul>
+    </div>
+
     <div class="messageDiv">
         <h2>Messages</h2>
-        <div id="msgtable"></div>
-      </div>
-      </div>
-      <script src="messages.js"></script>
+        <div id="msgtableajax"></div>
+    </div>
+    </div>
+    <script src="messages.js"></script>
 </body>
+
 </html>
