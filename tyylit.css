@@ -1,0 +1,32 @@
+#information {
+  background-color: darkgray;
+  padding: 50px;
+}
+
+#button {
+  margin-top: 10px;
+}
+
+.form-group {
+  background-color: lightgray;
+  border: black;
+  border-width: 2px;
+  padding: 5px;
+  width: 50%;
+}
+
+form {
+  border: 1px solid lightgrey;
+  padding: 10px;
+}
+
+input {
+  padding: 5px;
+  width: 50%;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
