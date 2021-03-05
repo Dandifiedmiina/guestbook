@@ -14,11 +14,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("./"));
 
 app.get("/", function (req, res) {
-  res.sendFile(__dirname + "\\index.html");
+  res.sendFile(__dirname + "/index.html");
 });
 
 app.get("/newmessage", function (req, res) {
-  res.sendFile(__dirname + "\\newmessage.html");
+  res.sendFile(__dirname + "/newmessage.html");
 });
 
 app.post("/newmessage2", function (req, res) {
@@ -26,7 +26,7 @@ app.post("/newmessage2", function (req, res) {
   var country = req.body.country;
   var message = req.body.message;
 
-  var json = require("./guestbook.json");
+  var json = require("/guestbook.json");
 
   console.log("Taulukon koko: " + json.length);
 
@@ -40,7 +40,7 @@ app.post("/newmessage2", function (req, res) {
 
   var datanew = JSON.stringify(json, "", 1);
 
-  fs.writeFileSync("./guestbook.json", datanew);
+  fs.writeFileSync("/guestbook.json", datanew);
 
   res.send("Message was sent!");
   console.log("added");
@@ -51,7 +51,7 @@ app.get("/ajaxmessage", function (req, res) {
 });
 
 app.get("/readguestbook", function (req, res) {
-  res.sendFile(__dirname + "\\readguestbook.html");
+  res.sendFile(__dirname + "/readguestbook.html");
 });
 
 app.get("*", function (req, res) {
