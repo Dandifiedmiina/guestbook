@@ -1,0 +1,17 @@
+{
+  "name": "Guestbook",
+  "version": "0.1.0",
+  "description": "Guestbook app",
+  "engines": {
+    "node": "12.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
