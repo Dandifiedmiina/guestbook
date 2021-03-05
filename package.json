@@ -1,5 +1,5 @@
 {
-  "name": "Guestbook",
+  "name": "guestbook",
   "version": "0.1.0",
   "description": "Guestbook app",
   "engines": {
@@ -13,5 +13,18 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dandifiedmiina/guestbook.git"
+  },
+  "keywords": [
+    "guestbook"
+  ],
+  "author": "Miina P",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dandifiedmiina/guestbook/issues"
+  },
+  "homepage": "https://github.com/Dandifiedmiina/guestbook#readme"
 }
