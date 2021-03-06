@@ -26,7 +26,7 @@ app.post("/newmessage2", function (req, res) {
   var country = req.body.country;
   var message = req.body.message;
 
-  var json = require("/guestbook.json");
+  var json = require("guestbook.json");
 
   console.log("Taulukon koko: " + json.length);
 
@@ -42,7 +42,7 @@ app.post("/newmessage2", function (req, res) {
 
   fs.writeFileSync("/guestbook.json", datanew);
 
-  res.send("Message was sent!");
+  res.sendFile(__dirname + "/readguestbook.html");
   console.log("added");
 });
 
