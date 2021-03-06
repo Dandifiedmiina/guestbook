@@ -14,6 +14,9 @@ $(document).ready(function () {
       data[x].message +
       "</td>" +
       "<td>" ;
+      data[x].date +
+      "</td>" +
+      "<td>" ;
   }
 
   $("#msgtable").html(table);

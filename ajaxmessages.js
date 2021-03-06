@@ -1,9 +1,9 @@
 $(document).ready(function () {
-  $("#ajaxbutton").click(function () {
+  $("#buttonajax").click(function () {
     var data = {
-      name: $("#name2").val(),
-      country: $("#country2").val(),
-      message: $("#message2").val(),
+      name: $("#nameajax").val(),
+      country: $("#countryajax").val(),
+      message: $("#messageajax").val(),
     };
 
     if ($("#nameajax").val() == "") {

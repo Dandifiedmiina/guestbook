@@ -51,3 +51,11 @@ th {
 h1 {
   margin: 30px;
 }
+
+a:active {
+  color: rgb(0, 0, 0);
+}
+a:hover {
+  color: rgb(68, 64, 64);
+  text-shadow: black;
+}
