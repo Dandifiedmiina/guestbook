@@ -25,7 +25,7 @@ app.post("/newmessage2", function (req, res) {
   var name = req.body.name;
   var country = req.body.country;
   var message = req.body.message;
-  var date = new Date();
+  var date = new Date(jsonDate);
 
   var json = require("./guestbook.json");
 
@@ -55,9 +55,9 @@ app.get("/ajaxmessage", function (req, res) {
 app.post("/ajaxmessage", function (req, res) {
   console.log(req.body.nameajax);
 
-  var name = req.body.nameajax;
-  var country = req.body.countryajax;
-  var message = req.body.messageajax;
+  var name = req.body.name;
+  var country = req.body.country;
+  var message = req.body.message;
   var date = new Date();
 
   var data = require("./guestbook.json");
@@ -72,7 +72,9 @@ app.post("/ajaxmessage", function (req, res) {
   var datanew = JSON.stringify(data, "", 1);
   fs.writeFileSync("./guestbook.json", datanew);
 
-  res.send("You left a message: " + name + " " + country + " " + message + " " + date);
+  res.send(
+    "You left a message: " + name + " " + country + " " + message + " @ " + date
+  );
 });
 
 app.get("/readguestbook", function (req, res) {
