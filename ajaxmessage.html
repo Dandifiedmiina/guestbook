@@ -11,18 +11,14 @@
 
 <body>
   <div>
-    <h1>Welcome to the guestbook!</h1>
-    <ul>
-      <div>
-        <li><a href="/readguestbook">Read Guestbook</a></li>
-      </div>
-      <div>
-        <li><a href="/newmessage">New Message</a></li>
-      </div>
-      <div>
-        <li><a href="/ajaxmessage">Ajax Message</a></li>
-      </div>
-    </ul>
+    <h1><a href="/">Welcome to the guestbook!</a></h1>
+    <nav class="navbar navbar-dark bg-dark">
+      <ul>
+        <a class="navbar-brand" href="/readguestbook">Read Guestbook</a>
+        <a class="navbar-brand" href="/newmessage">New Message</a>
+        <a class="navbar-brand" href="/ajaxmessage">Ajax Message</a>
+      </ul>
+    </nav>
   </div>
   <div>
     <form method="POST" action="/ajaxmessage">

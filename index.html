@@ -4,8 +4,9 @@
 
 <head>
   <!-- Tyylitiedosto + bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
 </head>
 
 <html>
@@ -17,11 +18,14 @@
 <body>
   <div>
     <h1>Welcome to the guestbook!</h1>
-    <ul>
-      <li><a href="/readguestbook">Read Guestbook</a></li>
-      <li><a href="/newmessage">New Message</a></li>
-      <li><a href="/ajaxmessage">Ajax Message</a></li>
-    </ul>
+
+    <nav class="navbar navbar-dark bg-dark">
+      <ul>
+        <a class="navbar-brand" href="/readguestbook">Read Guestbook</a>
+        <a class="navbar-brand" href="/newmessage">New Message</a>
+        <a class="navbar-brand" href="/ajaxmessage">Ajax Message</a>
+      </ul>
+    </nav>
   </div>
 
 </body>

@@ -6,24 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="tyylit.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Guestbook</title>
 </head>
 
 <body>
     <div>
-        <h1>Welcome to the guestbook!</h1>
-        <ul>
-            <div>
-                <li><a href="/readguestbook">Read Guestbook</a></li>
-            </div>
-            <div>
-                <li><a href="/newmessage">New Message</a></li>
-            </div>
-            <div>
-                <li><a href="/ajaxmessage">Ajax Message</a></li>
-            </div>
-        </ul>
+        <h1><a href="/">Welcome to the guestbook!</a></h1>
+        <nav class="navbar navbar-dark bg-dark">
+            <ul>
+                <a class="navbar-brand" href="/readguestbook">Read Guestbook</a>
+                <a class="navbar-brand" href="/newmessage">New Message</a>
+                <a class="navbar-brand" href="/ajaxmessage">Ajax Message</a>
+            </ul>
+        </nav>
     </div>
 
     <div class="messageDiv">
