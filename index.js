@@ -25,7 +25,7 @@ app.post("/newmessage2", function (req, res) {
   var name = req.body.name;
   var country = req.body.country;
   var message = req.body.message;
-  var date = new Date(jsonDate);
+  var date = new Date();
 
   var json = require("./guestbook.json");
 

@@ -49,6 +49,7 @@ th {
 }
 
 h1 {
+  margin-top: 100px;
   margin: 30px;
 }
 
@@ -58,4 +59,8 @@ a:active {
 a:hover {
   color: rgb(68, 64, 64);
   text-shadow: black;
+}
+
+p {
+  margin: 30px;
 }
