@@ -60,7 +60,9 @@ app.post("/ajaxmessage", function (req, res) {
   var name = req.body.name;
   var country = req.body.country;
   var message = req.body.message;
-  var date = new Date();
+  var dateFormat = require("dateformat");
+
+  var date = dateFormat(new Date(), "yyyy-mm-dd h:MM:ss");
 
   var data = require("./guestbook.json");
 
